@@ -1,0 +1,4 @@
+{
+    "admin": [{ "nom": "Yaya", "prenom": "War", "login": "admin1", "motdepasse": "mdpAdmin1" }],
+    "users": [{ "nom": "Takkino", "prenom": "War", "login": "user1", "motdepasse": "mdpUser1" }]
+}
