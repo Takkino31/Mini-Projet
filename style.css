@@ -11,11 +11,12 @@ body {
 /* Partie header */
 
 #header {
-    background-color: #80d0d0;
+    background-color: #042425;
     width: 100%;
     height: 100px;
     margin: 0px;
     display: inline-block;
+    color: #f8fdfd;
 }
 
 #header_h1 {
@@ -46,7 +47,7 @@ body {
 /* Fin partie Header*/
 
 
-/* Page Index*/
+/* Page Connexion*/
 
 .container {
     margin: 5px auto;
@@ -164,15 +165,195 @@ p {
     text-align: center;
 }
 
-#btn_deconnexion {
-    width: 24%;
-    height: 75px;
-    padding: 15px auto;
-    border: 2px solid yellow;
+
+/* Partie accueil fin */
+
+
+/* Partie admin*/
+
+#container-admin {
+    width: 98%;
+    height: auto;
+    margin: 17px auto;
+    background-color: #818181;
+    position: relative;
+    bottom: 80px;
+}
+
+#admin_header {
+    background-color: #80d0d0;
+    text-align: center;
+}
+
+#admin_header button {
+    position: relative;
+    left: 45%;
+}
+
+#admin_header h1 {
     display: inline-block;
+    position: relative;
+    top: 25px;
+    padding: auto;
+}
+
+#btn_deconnexion {
+    display: inline-block;
+    position: relative;
+    left: 35%;
+    bottom: 40px;
 }
 
 #btn_deconnexion button {
-    width: 100%;
-    height: 90%;
+    width: auto;
+    height: auto;
+    background-color: #51bfd0;
+    font-size: 30px;
+    border-radius: 5px 5px 5px 5px;
 }
+
+a {
+    text-decoration: none;
+}
+
+#zone_admin {
+    width: 100%;
+    height: auto;
+}
+
+#admin_menu {
+    width: 35%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 0% 0% 2% 2%;
+    margin: 5% 2% 5% 2%;
+    display: inline-block;
+}
+
+#zone_avatar {
+    width: 100%;
+    height: 250px;
+    background-color: #51bfd0;
+    border-radius: 2% 2% 0% 0%;
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: 200%;
+    color: #818181;
+}
+
+#menu li {
+    list-style-type: none;
+    width: 50%;
+}
+
+.glyphicon {
+    display: inline-block;
+    position: relative;
+    left: 110%;
+}
+
+#zone_questionnaire {
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    background-color: #f8fdfd;
+    border-radius: 2% 2% 2% 2%;
+}
+
+#zone_questionnaire h1 {
+    text-align: center;
+    display: block;
+    top: 50px;
+}
+
+#zone_questionnaire textarea {
+    display: inline-block;
+    position: relative;
+    width: 10%;
+    height: 30px;
+    left: 70%;
+    bottom: 50px;
+    font-size: 30px;
+}
+
+#zone_questionnaire button {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: 35px;
+    left: 70%;
+    bottom: 63px;
+    background-color: #5e90af;
+}
+
+#liste_question {
+    margin: 10px auto;
+    border: 1px solid #818181;
+    width: 95%;
+    height: auto;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+/* Partie admin Fin */
+
+
+/* Partie formulaire inscription */
+
+#container-inscription {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    background-color: #f8fdfd;
+    font-family: 'Open Sans';
+    text-decoration-color: none;
+    position: relative;
+    bottom: 65px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 2% 5% 2% 5%;
+}
+
+p {
+    font-size: 22px;
+    font-family: 'Myriad Pro';
+}
+
+.form-label {
+    font-size: 20px;
+}
+
+.form-input {
+    width: 30%;
+    height: 50px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#avatar {
+    display: block;
+    font-size: 20px;
+}
+
+#ajout-avatar {
+    display: inline-block;
+    position: relative;
+    left: 18.5%;
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 20px;
+    bottom: 25px;
+    background-color: #51bfd0;
+}
+
+#add-user {
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 20px;
+    background-color: #51bfd0;
+    position: relative;
+    left: 10%;
+}
+
+
+/* Fin Formulaire inscription */
