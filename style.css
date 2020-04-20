@@ -355,5 +355,13 @@ p {
     left: 10%;
 }
 
+.error-form-inscription {
+    color: red;
+}
+
+.form-input {
+    font-size: 20px;
+}
+
 
 /* Fin Formulaire inscription */

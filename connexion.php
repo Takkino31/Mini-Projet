@@ -15,28 +15,36 @@ if (isset($_POST["connexion"])) {
         $password=null;
         $erreur=null;
 
-        for ($i=0; $i < 2; $i++) { 
-            if($identifiants_array["admin"][$i]["login"]==$_POST["login"] && $identifiants_array["admin"][$i]["motdepasse"]==$_POST["password"]){
-                session_start();
-                $_SESSION["connecte"]=1;
-                $_SESSION["nom"]=$identifiants_array["admin"][$i]["nom"];
-                $_SESSION["prenom"]=$identifiants_array["admin"][$i]["prenom"];
-                header('location: admin.php');
-                exit();
+        for ($i=0; $i < 3; $i++) {
+            if($i==0){
+                for ($j=0; $j <count($identifiants_array["admin"]) ; $j++) { 
+                    if($identifiants_array["admin"][$j]["login"]==$_POST["login"] && $identifiants_array["admin"][$j]["motdepasse"]==$_POST["password"]){
+                        session_start();
+                        $_SESSION["connecte"]=1;
+                        $_SESSION["nom"]=$identifiants_array["admin"][$j]["nom"];
+                        $_SESSION["prenom"]=$identifiants_array["admin"][$j]["prenom"];
+                        header('location: admin.php');
+                        exit();
+                    }
+                }
             }
-            elseif($identifiants_array["users"][$i]["login"]==$_POST["login"] && $identifiants_array["users"][$i]["motdepasse"]==$_POST["password"]){
-                session_start();
-                $_SESSION["connecte"]=1;
-                $_SESSION["nom"]=$identifiants_array["users"][$i]["nom"];
-                $_SESSION["prenom"]=$identifiants_array["users"][$i]["prenom"];
-                header('location: accueil.php');
-                exit();
+            if($i==1){
+                for ($j=0; $j < count($identifiants_array["users"]); $j++) { 
+                    if($identifiants_array["users"][$j]["login"]==$_POST["login"] && $identifiants_array["users"][$j]["motdepasse"]==$_POST["password"]){
+                        session_start();
+                        $_SESSION["connecte"]=1;
+                        $_SESSION["nom"]=$identifiants_array["users"][$j]["nom"];
+                        $_SESSION["prenom"]=$identifiants_array["users"][$j]["prenom"];
+                        header('location: accueil.php');
+                        exit();
+                    }
+                }
             }
-
-            else {
+            if($i==3) {
                 $erreur="Identifiants incorrects";
             }
         }
+
         $close_file=json_encode($identifiants_array);
         file_put_contents('identifiants.json',$close_file);
     }

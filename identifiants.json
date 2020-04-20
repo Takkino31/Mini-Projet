@@ -1,4 +1,16 @@
 {
-    "admin": [{ "nom": "Yaya", "prenom": "War", "login": "admin1", "motdepasse": "mdpAdmin1" }],
-    "users": [{ "nom": "Takkino", "prenom": "War", "login": "user1", "motdepasse": "mdpUser1" }]
+    "admin": [{
+        "nom": "Yaya",
+        "prenom": "War",
+        "login": "admin1",
+        "motdepasse": "mdpAdmin1"
+    }],
+    "users": [{
+            "nom": "Takkino",
+            "prenom": "War",
+            "login": "user1",
+            "motdepasse": "mdpUser1"
+        }, { "nom": "Takkino", "prenom": "War", "login": "user1", "motdepasse": "mdpUser1" },
+        { "nom": "fall", "prenom": "khalil", "login": "lilkha", "motdepasse": "mignolet" }
+    ]
 }
